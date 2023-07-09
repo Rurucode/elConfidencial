@@ -1,1 +1,10 @@
 @use '../base/global' as *;
+
+// FOOTER
+
+footer {
+  background: $footer-bg;
+  padding: $global-spacing;
+  text-align: center;
+  color: $primary-color;
+}

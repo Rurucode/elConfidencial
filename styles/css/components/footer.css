@@ -7,4 +7,16 @@
   list-style: none;
 }
 
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  background: #003B4F;
+  padding: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=footer.css.map */

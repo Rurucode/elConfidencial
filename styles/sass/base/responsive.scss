@@ -1,55 +1,54 @@
-@use './global' as *;
+@use './global.scss' as *;
 
 /* RESPONSIVE */
 @media screen and (max-width: 700px) {
   main {
-      @include  row-center;
+    @include row-center;
   }
 
   .container-ppal {
-      width: 95%;
+    width: 95%;
   }
 
   .container-img {
-      width: 100%;
-      margin: auto;
+    width: $global-anchor;
+    margin: auto;
   }
-
   .news {
-      width: 50%;
-      margin: 15px;
-      flex-direction: column;
+    width: 50%;
+    margin: 15px;
+    @include column;
   }
 
   .news-title h3 {
-      width: 150px;
-      text-overflow: ellipsis;
+    width: 150px;
+    text-overflow: ellipsis;
   }
 
   .bullet {
-      min-width: 14px;
+    min-width: 14px;
   }
 
   .news-content p:nth-child(1) {
-      display: none;
+    display: none;
   }
 
   .news-content>.txt-mobile {
-      display: inline;
+    display: inline;
   }
 
   .news-rrss {
-      width: 100%;
+    width: $global-anchor;
   }
 }
 
 @media screen and (max-width: 600px) {
   main {
-      flex-direction: column;
+    @include column;
   }
 
   .news {
-      width: auto;
+    width: auto;
   }
 
 }

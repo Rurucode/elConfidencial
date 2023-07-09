@@ -7,4 +7,144 @@
   list-style: none;
 }
 
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/* CARDS */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #C9C5C5;
+  box-shadow: inset 0px 0px 35px -2px rgba(0, 0, 0, 0.75);
+}
+
+.container-ppal {
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.news {
+  max-width: 1009px;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  padding: 16px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.news-header {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.vanitatis .bullet {
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  background-color: #D92F2F;
+}
+
+.cultura .bullet {
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  background-color: #7789D0;
+}
+
+.news-title h3 {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.news-tag {
+  font-family: "Roboto", sans-serif;
+  max-width: 80px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #828282;
+  background-color: #E4E4E4;
+}
+
+.spacer {
+  margin-top: 32px;
+}
+
+.spacer div {
+  margin-left: 16px;
+  margin-bottom: 20px;
+  border: 0.5px dotted black;
+}
+
+.news-content {
+  font-family: "Roboto", sans-serif;
+  padding: 0 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #121212;
+}
+
+.news-content > .txt-mobile {
+  display: none;
+}
+
+.vanitatis .news-content strong {
+  color: #D92F2F;
+}
+
+.cultura .news-content strong {
+  color: #7789D0;
+}
+
+.news-rrss {
+  width: 50%;
+}
+
+.news-rrss ul {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* IMAGEN */
+.container-img {
+  width: 38%;
+  margin-left: 24px;
+}
+
+.container-img img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=cards.css.map */
