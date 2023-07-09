@@ -8,6 +8,11 @@
   list-style: none;
 }
 
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
 /* reset */
 * {
   margin: 0;

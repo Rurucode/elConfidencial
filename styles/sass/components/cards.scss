@@ -1,2 +1,116 @@
 @use '../base/global' as *;
 
+/* CARDS */
+
+main {
+  @include column-center-center;
+  background: $body-bg;
+  box-shadow: inset 0px 0px 35px -2px rgba(0, 0, 0, 0.75);
+}
+
+.container-ppal {
+  width: $container-ppal-size;
+  @include column-space-bet;
+}
+
+.container-txt {
+  @include column;
+}
+
+.news {
+  max-width: $news-anchor;
+  @include row;
+
+  margin: 25px;
+  padding: $global-spacing;
+  border-radius: 4px;
+  background: $primary-color;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.news-header {
+  margin-left: $global-spacing;
+
+  @include row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-title {
+  @include row-center;
+}
+
+.vanitatis .bullet {
+
+  @include bullet;
+  background-color: $vanitatis-color;
+}
+
+.cultura .bullet {
+
+  @include bullet;
+  background-color: $cultura-color;
+}
+
+.news-title h3 {
+  font-size: $h3-font-size;
+  font-family: $body-font-family;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.news-tag {
+  font-family: $body-font-family;
+  @include tag;
+}
+
+.spacer {
+  margin-top: calc($global-spacing + $global-spacing);
+}
+
+.spacer div {
+  margin-left: $global-spacing;
+  margin-bottom: 20px;
+  border: 0.5px dotted black;
+}
+
+.news-content {
+  font-family: $body-font-family;
+  padding: 0 16px;
+  @include p-tipography;
+}
+
+.news-content>.txt-mobile {
+  display: none;
+}
+
+.vanitatis .news-content strong {
+  color: $vanitatis-color;
+}
+
+.cultura .news-content strong {
+  color: $cultura-color;
+}
+
+.news-rrss {
+  width: 50%;
+}
+
+.news-rrss ul {
+  padding: $global-spacing;
+  @include row-space-bet;
+
+  align-items: center;
+}
+
+/* IMAGEN */
+.container-img {
+  width: $container-img-size;
+  margin-left: 24px;
+}
+
+.container-img img {
+  width: $global-anchor;
+}

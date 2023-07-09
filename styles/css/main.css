@@ -1,3 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
 
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/* reset */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/* COMPONENTS */
+header {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #C9C5C5;
+  box-shadow: inset 0px 0px 35px -2px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  background: #003B4F;
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+/* CABECERA */
+.cabecera h1 img {
+  width: 100%;
+}
+
+/* CARDS */
+.container-ppal {
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.news {
+  max-width: 1009px;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  padding: 16px;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.news-header {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.vanitatis .bullet {
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  background-color: #D92F2F;
+}
+
+.cultura .bullet {
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  background-color: #7789D0;
+}
+
+.news-title h3 {
+  font-size: 28px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.news-tag {
+  max-width: 80px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #828282;
+  background-color: #E4E4E4;
+}
+
+.spacer {
+  margin-top: 32px;
+}
+
+.spacer div {
+  margin-left: 16px;
+  margin-bottom: 20px;
+  border: 0.5px dotted black;
+}
+
+.news-content {
+  padding: 0 16px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #121212;
+}
+
+.news-content > .txt-mobile {
+  display: none;
+}
+
+.vanitatis .news-content strong {
+  color: #D92F2F;
+}
+
+.cultura .news-content strong {
+  color: #7789D0;
+}
+
+.news-rrss {
+  width: 50%;
+}
+
+.news-rrss ul {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* IMAGEN */
+.container-img {
+  width: 38%;
+  margin-left: 24px;
+}
+
+.container-img img {
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container-ppal {
+    width: 95%;
+  }
+  .container-img {
+    width: 100%;
+    margin: auto;
+  }
+  .news {
+    width: 50%;
+    margin: 15px;
+    flex-direction: column;
+  }
+  .news-title h3 {
+    width: 150px;
+    text-overflow: ellipsis;
+  }
+  .bullet {
+    min-width: 14px;
+  }
+  .news-content p:nth-child(1) {
+    display: none;
+  }
+  .news-content > .txt-mobile {
+    display: inline;
+  }
+  .news-rrss {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+  .news {
+    width: auto;
+  }
+}
+
+/* RESET */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container-ppal {
+    width: 95%;
+  }
+  .container-img {
+    width: 100%;
+    margin: auto;
+  }
+  .news {
+    width: 50%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .news-title h3 {
+    width: 150px;
+    text-overflow: ellipsis;
+  }
+  .bullet {
+    min-width: 14px;
+  }
+  .news-content p:nth-child(1) {
+    display: none;
+  }
+  .news-content > .txt-mobile {
+    display: inline;
+  }
+  .news-rrss {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .news {
+    width: auto;
+  }
+}
+header {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cabecera h1 img {
+  width: 100%;
+}
+
+/* CARDS */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #C9C5C5;
+  box-shadow: inset 0px 0px 35px -2px rgba(0, 0, 0, 0.75);
+}
+
+.container-ppal {
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.news {
+  max-width: 1009px;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  padding: 16px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.news-header {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.vanitatis .bullet {
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  background-color: #D92F2F;
+}
+
+.cultura .bullet {
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  background-color: #7789D0;
+}
+
+.news-title h3 {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.news-tag {
+  font-family: "Roboto", sans-serif;
+  max-width: 80px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #828282;
+  background-color: #E4E4E4;
+}
+
+.spacer {
+  margin-top: 32px;
+}
+
+.spacer div {
+  margin-left: 16px;
+  margin-bottom: 20px;
+  border: 0.5px dotted black;
+}
+
+.news-content {
+  font-family: "Roboto", sans-serif;
+  padding: 0 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #121212;
+}
+
+.news-content > .txt-mobile {
+  display: none;
+}
+
+.vanitatis .news-content strong {
+  color: #D92F2F;
+}
+
+.cultura .news-content strong {
+  color: #7789D0;
+}
+
+.news-rrss {
+  width: 50%;
+}
+
+.news-rrss ul {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* IMAGEN */
+.container-img {
+  width: 38%;
+  margin-left: 24px;
+}
+
+.container-img img {
+  width: 100%;
+}
+
+footer {
+  background: #003B4F;
+  padding: 16px;
+  text-align: center;
+  color: #ffffff;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,6 @@
 
 //  Table of Contents:
 //
-//   0. Reset
 //   1. Global
 //   2. Tipography
 //   3. Spacing
@@ -12,13 +11,17 @@
 // 0.Reset
 
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
 
 // 1.Global
 
@@ -28,6 +31,7 @@ $vanitatis-color: #D92F2F;
 $cultura-color: #7789D0;
 $black: #121212;
 $tag-bg: #E4E4E4;
+$footer-bg: #003B4F;
 
 
 // 2.Tipography
@@ -38,13 +42,17 @@ $global-font-size: 18px;
 $global-line-height: 28px;
 $h3-font-size: 28px;
 $tag-font-size: 15px;
+$tag-color: #828282;
 
 
 // 3.Spacing
 $global-spacing: 16px;
+$global-anchor: 100%;
 $bullet-size: 14px;
 $container-ppal-size: 68%;
 $container-img-size: 38%;
+$news-anchor: 1009px;
+
 
 
 // 4.Mixins
@@ -89,4 +97,30 @@ $container-img-size: 38%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@mixin bullet {
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+}
+
+@mixin tag {
+  max-width: 80px;
+  height: 30px;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+  // align-items: center;
+  @include row-center-center;
+  font-size: $tag-font-size;
+  color: $tag-color;
+  background-color: $tag-bg;
+}
+
+@mixin p-tipography {
+  font-family: $body-font-family;
+  font-size: $global-font-size;
+  line-height: $global-line-height;
+  color: $global-font-color;
 }
