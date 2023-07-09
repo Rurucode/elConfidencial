@@ -1,7 +1,6 @@
-@use './base/estilo.scss';
+// @use './base/estilo.scss';
 @use './base/reset.scss';
-@use './base/responsive.scss';
-
 @use './components/header.scss';
 @use './components/cards.scss';
 @use './components/footer.scss';
+@use './base/responsive.scss';
