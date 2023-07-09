@@ -1,0 +1,55 @@
+@use './global' as *;
+
+/* RESPONSIVE */
+@media screen and (max-width: 700px) {
+  main {
+      @include  row-center;
+  }
+
+  .container-ppal {
+      width: 95%;
+  }
+
+  .container-img {
+      width: 100%;
+      margin: auto;
+  }
+
+  .news {
+      width: 50%;
+      margin: 15px;
+      flex-direction: column;
+  }
+
+  .news-title h3 {
+      width: 150px;
+      text-overflow: ellipsis;
+  }
+
+  .bullet {
+      min-width: 14px;
+  }
+
+  .news-content p:nth-child(1) {
+      display: none;
+  }
+
+  .news-content>.txt-mobile {
+      display: inline;
+  }
+
+  .news-rrss {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+      flex-direction: column;
+  }
+
+  .news {
+      width: auto;
+  }
+
+}
