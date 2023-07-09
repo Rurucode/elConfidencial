@@ -1,3 +1,4 @@
+@use 'global.scss' as *;
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /* reset */
@@ -88,7 +89,8 @@ footer {
     width: 14px;
     height: 14px;
     margin-right: 12px;
-    background-color: #D92F2F;
+    // background-color: #D92F2F;
+    background-color: $vanitatis-color;
 }
 
 .cultura .bullet {
